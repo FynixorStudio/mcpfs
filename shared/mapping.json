@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "clients": {
+    "claude-code": {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "type": "json",
+      "key": "mcpServers",
+      "priority": 1,
+      "paths": {
+        "global": ["~/.claude.json"],
+        "project": [".mcp.json"]
+      }
+    },
+    "cursor": {
+      "id": "cursor",
+      "name": "Cursor",
+      "type": "json",
+      "key": "mcpServers",
+      "priority": 1,
+      "paths": {
+        "global": [],
+        "project": [".cursor/mcp.json"]
+      }
+    },
+    "claude-desktop": {
+      "id": "claude-desktop",
+      "name": "Claude Desktop",
+      "type": "json",
+      "key": "mcpServers",
+      "priority": 1,
+      "paths": {
+        "global": {
+          "win32": "%APPDATA%/Claude/claude_desktop_config.json",
+          "darwin": "~/Library/Application Support/Claude/claude_desktop_config.json",
+          "linux": "~/.config/Claude/claude_desktop_config.json"
+        },
+        "project": []
+      }
+    },
+    "opencode": {
+      "id": "opencode",
+      "name": "OpenCode",
+      "type": "json",
+      "key": "mcpServers",
+      "priority": 1,
+      "paths": {
+        "global": [],
+        "project": ["opencode.json", ".opencode/mcp.json"]
+      }
+    },
+    "codex-cli": {
+      "id": "codex-cli",
+      "name": "Codex CLI",
+      "type": "toml",
+      "key": "mcp_servers",
+      "priority": 1,
+      "paths": {
+        "global": ["~/.codex/config.toml"],
+        "project": []
+      }
+    },
+    "roo-code": {
+      "id": "roo-code",
+      "name": "RooCode",
+      "type": "json",
+      "key": "mcpServers",
+      "priority": 2,
+      "paths": {
+        "global": [],
+        "project": [".roo/mcp.json", "roo-mcp-settings.json"]
+      }
+    },
+    "cline": {
+      "id": "cline",
+      "name": "Cline",
+      "type": "json",
+      "key": "mcpServers",
+      "priority": 2,
+      "paths": {
+        "global": [
+          "~/.cline/mcp_settings.json",
+          "~/Library/Application Support/Code/User/globalStorage/saoudrizwan.cline/settings/cline_mcp_settings.json",
+          "~/.config/Code/User/globalStorage/saoudrizwan.cline/settings/cline_mcp_settings.json",
+          "%APPDATA%/Code/User/globalStorage/saoudrizwan.cline/settings/cline_mcp_settings.json"
+        ],
+        "project": []
+      }
+    },
+    "continue": {
+      "id": "continue",
+      "name": "Continue.dev",
+      "type": "json",
+      "key": "mcpServers",
+      "priority": 2,
+      "paths": {
+        "global": ["~/.continue/config.json"],
+        "project": [".continue/config.json"]
+      }
+    }
+  },
+  "runners": {
+    "ollama": {
+      "id": "ollama",
+      "name": "Ollama",
+      "detect": ["~/.ollama", "ollama"]
+    },
+    "lmstudio": {
+      "id": "lmstudio",
+      "name": "LMStudio",
+      "detect": ["~/.cache/lmstudio", "~/.lmstudio", "~/Library/Application Support/LMStudio", "%APPDATA%/LMStudio", "~/.config/LMStudio"]
+    },
+    "llama-server": {
+      "id": "llama-server",
+      "name": "llama-server (llama.cpp)",
+      "detect": ["llama-server"]
+    },
+    "open-webui": {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "detect": ["~/.config/open-webui", "~/Library/Application Support/Open WebUI", "%APPDATA%/Open WebUI"]
+    },
+    "sillytavern": {
+      "id": "sillytavern",
+      "name": "SillyTavern",
+      "detect": ["./SillyTavern", "~/SillyTavern", "SillyTavern"]
+    }
+  }
+}

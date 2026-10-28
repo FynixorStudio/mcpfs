@@ -1,0 +1,23 @@
+{
+  "name": "mcpfs",
+  "version": "0.0.1",
+  "description": "Manage MCP servers across AI clients & local runners",
+  "author": "mcpfs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcpfs/mcpfs"
+  },
+  "keywords": [
+    "mcp",
+    "cli",
+    "claude",
+    "cursor",
+    "opencode",
+    "codex",
+    "roo-code",
+    "cline",
+    "ollama",
+    "lmstudio"
+  ]
+}

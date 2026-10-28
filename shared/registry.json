@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "mcp": [
+    {
+      "id": "filesystem",
+      "name": "Filesystem",
+      "description": "Akses & kelola file/direktori di workspace lu",
+      "tags": ["core", "files"],
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "${PROJECT_DIR}"],
+      "requires": ["node"]
+    },
+    {
+      "id": "fetch",
+      "name": "Fetch",
+      "description": "Biar agent bisa fetch & baca konten web",
+      "tags": ["web", "core"],
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"],
+      "requires": ["node"]
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "description": "Baca history, diff, status, branch & operasi git",
+      "tags": ["git", "core"],
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "${PROJECT_DIR}"],
+      "requires": ["node"]
+    },
+    {
+      "id": "memory",
+      "name": "Memory",
+      "description": "Knowledge graph biar agent bisa inget konteks jangka panjang",
+      "tags": ["memory"],
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "requires": ["node"]
+    },
+    {
+      "id": "sequential-thinking",
+      "name": "Sequential Thinking",
+      "description": "Bantu agent mikirin step by step buat problem kompleks",
+      "tags": ["reasoning"],
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "requires": ["node"]
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "description": "Biar agent tau waktu & zona waktu lokal/target",
+      "tags": ["utility"],
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-time"],
+      "requires": ["node"]
+    }
+  ]
+}
